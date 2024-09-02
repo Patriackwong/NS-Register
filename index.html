@@ -27,7 +27,7 @@
   <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
 
-    const liffId = "2004239512-3mL01ZDz";  //เปลี่ยนเป็น liffId ของที่สร้าง
+    const liffId = "    ";  //เปลี่ยนเป็น liffId ของที่สร้าง
 
     liff.ready
       .then(() => {
@@ -35,14 +35,14 @@
           return liff.getProfile();
         } else {
           liff.login({
-            redirectUri: "https://nonoilmk.github.io/nktimetickerregis/", //เปลี่ยนเป็น URL ที่สร้าง replit
+            redirectUri: "   ", //เปลี่ยนเป็น URL ที่สร้าง replit
           });
         }
       })
       .then((profile) => {
         window.location.replace(
           `
-https://docs.google.com/forms/d/e/1FAIpQLSfkG3psIEAEJuMvWEkFNIi7-02GjznWlXil5jysGvnE_JCjOw/viewform?usp=pp_url&entry.280199702=${profile.userId}
+https://docs.google.com/forms/d/e/1FAIpQLSdXWpPdZNbU7erTX4rSc1aCAzgo9exRP1ERpYpFt5WcwVcjEw/viewform?usp=pp_url&entry.280199702=${profile.userId}
 `
         );
       });
